@@ -13,19 +13,19 @@ This project demonstrates full-stack development using Flask, database integrati
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 User Authentication (Signup & Login)
-- 👤 Role-based access (Admin / Member)
-- 📁 Project creation and management
-- 📋 Task creation and assignment
-- 🔄 Task status update (Pending → Completed)
-- 📊 Dashboard with task statistics
-- 🎨 Clean and modern user interface
+-  User Authentication (Signup & Login)
+-  Role-based access (Admin / Member)
+-  Project creation and management
+-  Task creation and assignment
+-  Task status update (Pending → Completed)
+-  Dashboard with task statistics
+-  Clean and modern user interface
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Backend:**
 - Python
@@ -67,7 +67,7 @@ team-task-manager/
 
 ---
 
-## ⚙️ How the App Works
+##  How the App Works
 
 ### 1. User Authentication
 - Users can sign up with name, email, password, and role
@@ -99,7 +99,7 @@ Displays:
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 The application was tested for:
 
@@ -112,7 +112,7 @@ The application was tested for:
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
  
 *team-task-manager-production-1407.up.railway.app*
 
@@ -124,7 +124,7 @@ The application was tested for:
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. Clone the repository:
 ```
@@ -163,7 +163,7 @@ python app.py
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 - Virtual environment (venv) is not included in repository
 - Database is auto-created when the app runs
@@ -171,7 +171,7 @@ python app.py
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 - Password encryption (security)
 - User sessions & logout
@@ -182,7 +182,7 @@ python app.py
 
 ---
 
-## 🙌 Conclusion
+##  Conclusion
 
 This project demonstrates the complete development of a full-stack web application, including backend APIs, database integration, frontend UI, testing, and deployment.
 
