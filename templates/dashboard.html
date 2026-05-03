@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Task Manager - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Team Task Manager</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Projects</a>
+        <a href="#">Tasks</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- APP TITLE -->
+        <h1 class="dashboard-title">Team Task Manager</h1>
+
+        <h2>Dashboard</h2>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Total Tasks</h3>
+                <p>{{total}}</p>
+            </div>
+            <div class="stat-box">
+                <h3>Completed</h3>
+                <p>{{completed}}</p>
+            </div>
+            <div class="stat-box">
+                <h3>Pending</h3>
+                <p>{{pending}}</p>
+            </div>
+        </div>
+
+        <!-- Create Project -->
+        <div class="card">
+            <h3>Create Project</h3>
+            <form action="/create_project/{{user_id}}" method="post">
+                <input type="text" name="name" placeholder="Project Name" required>
+                <button>Create</button>
+            </form>
+        </div>
+
+        <!-- Create Task -->
+        <div class="card">
+            <h3>Create Task</h3>
+            <form action="/create_task/{{user_id}}" method="post">
+                <input name="title" placeholder="Title" required>
+                <input name="description" placeholder="Description" required>
+                <input name="deadline" placeholder="YYYY-MM-DD" required>
+                <input name="assigned_to" placeholder="User ID" required>
+                <input name="project_id" placeholder="Project ID" required>
+                <button>Create Task</button>
+            </form>
+        </div>
+
+        <!-- Task List -->
+        <div class="card">
+            <h3>Tasks</h3>
+
+            {% for task in tasks %}
+            <div class="task">
+                <strong>{{task.title}}</strong>
+
+                <span class="badge {{ 'completed' if task.status=='Completed' else 'pending' }}">
+                    {{task.status}}
+                </span>
+
+                <br>
+                <small>Deadline: {{task.deadline}}</small>
+
+                <br>
+
+                <a href="/update_task/{{task.id}}/{{user_id}}">
+                    Mark Completed
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
