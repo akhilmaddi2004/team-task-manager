@@ -129,7 +129,7 @@ The application was tested for:
 1. Clone the repository:
 ```
 
-git clone [https://github.com/your-username/team-task-manager.git](https://github.com/your-username/team-task-manager.git)
+git clone (https://github.com/akhilmaddi2004/team-task-manager.git)
 
 ```
 
@@ -157,7 +157,7 @@ python app.py
 5. Open in browser:
 ```
 
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
+(http://127.0.0.1:5000)
 
 ```
 
