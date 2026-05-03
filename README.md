@@ -189,6 +189,3 @@ This project demonstrates the complete development of a full-stack web applicati
 It provides a strong foundation for building real-world scalable applications.
 
 ---
-
-```
-
